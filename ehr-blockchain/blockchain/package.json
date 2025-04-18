@@ -1,0 +1,33 @@
+{
+  "name": "ehr-blockchain-contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for EHR Blockchain System",
+  "main": "truffle-config.js",
+  "scripts": {
+    "test": "truffle test",
+    "compile": "truffle compile",
+    "migrate": "truffle migrate",
+    "migrate:reset": "truffle migrate --reset",
+    "migrate:goerli": "truffle migrate --network goerli",
+    "migrate:mainnet": "truffle migrate --network mainnet",
+    "verify": "truffle run verify",
+    "coverage": "truffle run coverage",
+    "lint": "solhint 'contracts/**/*.sol'",
+    "lint:fix": "solhint 'contracts/**/*.sol' --fix"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.0",
+    "@truffle/hdwallet-provider": "^2.1.11",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "@openzeppelin/test-helpers": "^0.5.16",
+    "chai": "^4.3.7",
+    "eth-gas-reporter": "^0.2.25",
+    "ganache-cli": "^6.12.2",
+    "solhint": "^3.4.1",
+    "solidity-coverage": "^0.8.2",
+    "truffle": "^5.9.2",
+    "truffle-plugin-verify": "^0.6.3"
+  }
+}
